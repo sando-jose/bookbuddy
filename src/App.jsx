@@ -1,7 +1,11 @@
+import { Routes, Route } from "react-router-dom";
+
 const App = () => {
   return (
     <>
-      <h1>BookBuddy Start</h1>
+      <Routes>
+        <Route path="/" element={<h1>Book Buddy</h1>} />
+      </Routes>
     </>
   );
 };
