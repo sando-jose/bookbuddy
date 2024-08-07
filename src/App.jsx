@@ -1,13 +1,13 @@
-import { Routes, Route } from "react-router-dom";
+import React from "react";
+import AppRoutes from "./components/AppRoutes";
+import Navbar from "./components/Navbar";
+import "./styles.css";
 
-const App = () => {
-  return (
-    <>
-      <Routes>
-        <Route path="/" element={<h1>Book Buddy</h1>} />
-      </Routes>
-    </>
-  );
-};
+const App = () => (
+  <div className="App">
+    <Navbar />
+    <AppRoutes />
+  </div>
+);
 
 export default App;
